@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+    <link rel="stylesheet" href="Css/bootstrap.min.css">   
+    <link rel="stylesheet" href="Css/Cpanel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+</head>
+<body>
+<div class="container-fluid  pb-3 pt-5">
+    <div class="container text-center">
+         <div class="des text-center">
+        <h1>لوحة التحكم</h1>
+        <div class="back"></div>
+    </div>  
+    </div>
+    <div class="container form  mt-5 pt-3 ">
+        <h2 class="text-center">
+            <i class="fa-solid fa-bookmark"></i>
+           الرد على الاستشارات
+            <i class="fa-solid fa-bookmark"></i></h2>
+          
+       
+      
+            <form class="pb-4">
+                <label class="d-flex gap-2 align-items-center mt-4" for="SiteName"><i class="fa-solid fa-question"></i>الاستشارة</label>
+                <input class="form-control mt-2" id="SiteName" type="text"  aria-label="default input example" readonly>
+                <label class="d-flex gap-2 align-items-center mt-4" for="SiteURL"><i class="fa-solid fa-book"></i>أدخل الرد على هذه الإستشارة؟</label>
+                <input class="form-control mt-2 " id="SiteURL" type="text"  aria-label="default input example" >
+               <a style="width: 160px;box-sizing: border-box;"  class="btn btn-submit px-5 m-auto d-flex mt-4 justify-content-center " id="submitBtn" onclick="addAns()"> تأكيد الرد</a>
+               
+             
+             
+          </form>
+    </div>
+    <div class="container mt-4 ">
+        <table class="table">
+            <thead >
+              <tr class="text-center">
+                <th style="width: 5%;" scope="col">رقم</th>
+                <th style="width: 5%;" scope="col"> المستخدم</th>
+                <th style="width: 30%;" scope="col">الاستشارة</th>
+                <th style="width: 40%;" scope="col">ألإجابة</th>
+                <th style="width: 10%;" scope="col">رد</th>
+                <th style="width: 5%;" scope="col">نشر</th>
+               
+               
+              </tr>
+            </thead>
+            <tbody id="tbl">
+            
+             
+            
+            </tbody>
+          </table>
+
+
+    </div>
+ 
+
+</div>
+
+    <script src="index.js"></script>
+    <script src="bootstrap.bundle.js"></script>
+
+</body>
+</html>
